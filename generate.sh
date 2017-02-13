@@ -60,7 +60,7 @@ total=34
 pstr="[=======================================================================]"
 
 while [ $count -lt $total ]; do
-  sleep 0.05 # this is work
+  sleep 0.01
   count=$(( $count + 1 ))
   pd=$(( $count * 73 / $total ))
   printf "\r%3d.%1d%% %.${pd}s" $(( $count * 100 / $total )) $(( ($count * 1000 / $total) % 10 )) $pstr
